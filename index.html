@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Onceava Aplicacion </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/9.jpg','imagenes/31.jpg','imagenes/36.jpg')" >
+
+<div data-role="page" id="principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+     <h1><center> CARRERAS QUE QUIERO ESTUDIAR </center></h1>
+   </div>
+<div>
+    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="visor/data1/images/21.jpg" alt="21" title="21" id="wows1_0"/></li>
+		<li><img src="visor/data1/images/22.jpg" alt="22" title="22" id="wows1_1"/></li>
+		<li><img src="visor/data1/images/23.jpg" alt="23" title="23" id="wows1_2"/></li>
+		<li><img src="visor/data1/images/24.jpg" alt="24" title="24" id="wows1_3"/></li>
+		<li><img src="visor/data1/images/25.jpg" alt="25" title="25" id="wows1_4"/></li>
+		<li><img src="visor/data1/images/26.jpg" alt="26" title="26" id="wows1_5"/></li>
+		<li><img src="visor/data1/images/27.jpg" alt="27" title="27" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="visor/data1/images/28.jpg" alt="bootstrap carousel" title="28" id="wows1_7"/></a></li>
+		<li><img src="visor/data1/images/29.jpg" alt="29" title="29" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="21"><span><img src="visor/data1/tooltips/21.jpg" alt="21"/>1</span></a>
+		<a href="#" title="22"><span><img src="visor/data1/tooltips/22.jpg" alt="22"/>2</span></a>
+		<a href="#" title="23"><span><img src="visor/data1/tooltips/23.jpg" alt="23"/>3</span></a>
+		<a href="#" title="24"><span><img src="visor/data1/tooltips/24.jpg" alt="24"/>4</span></a>
+		<a href="#" title="25"><span><img src="visor/data1/tooltips/25.jpg" alt="25"/>5</span></a>
+		<a href="#" title="26"><span><img src="visor/data1/tooltips/26.jpg" alt="26"/>6</span></a>
+		<a href="#" title="27"><span><img src="visor/data1/tooltips/27.jpg" alt="27"/>7</span></a>
+		<a href="#" title="28"><span><img src="visor/data1/tooltips/28.jpg" alt="28"/>8</span></a>
+		<a href="#" title="29"><span><img src="visor/data1/tooltips/29.jpg" alt="29"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+    
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> CARRERA DE LA HEROICA ESCUELA NAVAL MILITAR </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> CARREA DE INGIENERIA EN MECATRONICA  </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>FUERZA AEREA  </h2>
+    <p> clic para mas informacion </p>
+      </a>
+    </li>
+    <div data-role="content" align="center">
+     <div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Datos Personales </h1>
+<div>
+  <center><h3>CBTis 16<br> Mariely Flores Flores<br> 4° "H" <br> DAM <br> Jose Antonio Gomez H. </h3> </center>
+          <br>
+        </div>
+       <div>
+        </div>
+       </div>
+       </div>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4> Aplicacion Once </h4>
+     <h4> Carreras MFF </h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1><center> CARRERA DE LA HEROICA ESCUELA NAVAL MILITAR </center></h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+ <h3> La formación de Oficiales Navales, tiene sus orígenes desde el año de 1825 con la Academia Naval, ubicada en Tlacotalpan, Veracruz. Después de algunos cambios de ubicación, en 1890 el brigadier José María de la Vega González, Jefe de Departamento de Marina, de la Secretaría de Guerra y Marina, presentó el proyecto para la creación de una Escuela Naval Militar, donde se imparta la educación teórica y práctica para quienes se desempeñan como Oficiales y Maquinistas de los buques de la Armada Mexicana. </h3>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('naval','','imagenes/31.jpg',1)"><img src="imagenes/30.jpg" width="50%" height="50%" id="naval"></a><br><br>
+  <h3> Esta escuela cuenta con instalaciones en:<br> *laboratorio de electrònica<br> *Areas verdes<br> *edificio Administrativo<br> *Auditorio Interactiv<br> *Laboratorio de Inglés.<br> Entre muchos mas. <br><br><br> No obstante tambien realizan diversas actividades. Las actividades consiste la vida del Cadete y se clasifican de la siguiente manera:<br> *Actividades Rutinarias<br>*Actividades Extramuros.<br></h3>
+    </div>
+  </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Mas Informacion Sobre la carrea  </h1>
+         <div>
+        <a href=" http://www.henm.edu.mx/index.html"> Dar clic aquí para mas informacion </a>
+   </div>
+       </div>
+       </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Aplicacion Once, MFF</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> CARREA DE INGIENERIA EN MECATRONICA  </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+<h3> Existen varias Universidades que tienen esta carera, algunas de ellas son: </h3>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> UNIVERSIDAD UNITEC  </h1>
+         <div>
+         <img src="imagenes/32.jpg" width="50%" height="50%">
+         <h3> En este plantel los planes de estudio están diseñados para formar profesionistas de excelencia académica comprometidos con la sociedad. Es a través del conjunto de conocimientos prácticos y teóricos, como desarrollarás las aptitudes necesarias para abrirte las puertas al mercado laboral. En esta institucion tambien puedes conseguir becas , puedes revalidar tus estudios, cuando vas a elavorar tus practicas te mandan a empresas para que despues ellas te contraten con forme a tu desempeño</h3><br><br>
+        <a href=" http://www.unitec.mx/ingenieria-mecatronica/"> Dar clic aquí para mas informacion </a>
+   </div>
+       </div>
+       </div>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> UNIVERSIDAD UVM  </h1>
+         <div>
+         <img src="imagenes/33.jpg" width="50%" height="50%">
+         <h3> En este plantel, en la Ingeniería de Mecatronica, tienes acceso a laboratorios y proyectos diseñados en conjunto con líderes de la industria como Siemens y National Instruments. Además, te permite una especialización en ingeniería automotriz y aeronáutica.</h3><br><br>
+        <a href="http://www.universidaduvm.mx/ingenieria-en-mecatronica/"> Dar clic aquí para mas informacion </a>
+   </div>
+       </div>
+       </div>
+ <div data-role="main" class="ui-content" align="center">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> TECNOLOGICO SUPERIOR DE ATLIXCO </h1>
+         <div>
+         <img src="imagenes/34.jpg" width="50%" height="50%">
+         <h3> El proposito de este plantel es formar profesionales con la capacidad de crear, diseñar, modelar y construir tanto herramientas, equipo, así como administrar procesos que involucren dispositivos electrónicos y mecánicos, seleccionando los materiales mas adecuados y realizando la programación de software necesaria, para hacer frente a la creciente demanda de sistemas automatizados e inteligentes.</h3><br><br>
+        <a href="http://www.itsatlixco.edu.mx/tec/#"> Dar clic aquí para mas informacion </a>
+          </div>
+       </div>
+          </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Aplicacion Once, MFF</h4>
+  </div>
+</div>
+</div>
+
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> FUERZA AEREA MEXICANA  </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+<h3> La Secretaría de la Defensa Nacional (Sedena) convoca a jóvenes que deseen cursar estudios en alguno de los panteles militares en los que capacitan a los futuros cuadros de mando del Ejército y Fuerza Aérea, bajo la premisa de tener oficiales útiles a la patria, profesionales, instruidos y aptos para cumplir eficientemente sus misiones y participar en el desarrollo nacional.  </h3>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('aerea','','imagenes/36.jpg',1)"><img src="imagenes/35.jpg" width="50%" height="50%" id="aerea"></a><br><br>
+    </div>
+  </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Mas Informacion Sobre la carrea  </h1>
+         <div>
+        <a href="http://sipse.com/mexico/convocatoria-2016-ingreso-escuelas-militares-ejercito-fuerza-aerea-mexicanos-189155.html"> Dar clic aquí para mas informacion </a>
+   </div>
+       </div>
+       </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Aplicacion Once, MFF</h4>
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
